@@ -17,6 +17,7 @@ define('F1_TRACKER_PLUGIN_URL', plugin_dir_url(__FILE__));
 require_once F1_TRACKER_PLUGIN_PATH . 'includes/class-f1-api.php';
 require_once F1_TRACKER_PLUGIN_PATH . 'includes/class-f1-helpers.php';
 require_once F1_TRACKER_PLUGIN_PATH . 'admin/class-f1-admin.php';
+require_once F1_TRACKER_PLUGIN_PATH . 'functions.php';
 
 function f1_tracker_init() {
     new F1_Tracker_Admin();

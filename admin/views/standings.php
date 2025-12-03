@@ -4,7 +4,7 @@
         <table class="f1-table">
             <thead>
                 <tr>
-                    <th>Pos</th>
+                    <th>Position</th>
                     <th>Driver</th>
                     <th>Nationality</th>
                     <th>Constructor</th>
@@ -38,4 +38,5 @@
             </tbody>
         </table>
     </div>
+</div>
 </div>

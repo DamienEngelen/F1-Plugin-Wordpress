@@ -27,9 +27,9 @@
                     <?php echo date('M j', strtotime($race['date'])); ?>
                 </div>
                 <?php if($past): ?>
-                    <span class="f1-status-badge status-completed">Completed</span>
+                    <span class="f1-status-badge status-completed">✓ Completed</span>
                 <?php else: ?>
-                    <span class="f1-status-badge status-upcoming">Upcoming</span>
+                    <span class="f1-status-badge status-upcoming">⏱ Upcoming</span>
                 <?php endif; ?>
             </div>
         </div>

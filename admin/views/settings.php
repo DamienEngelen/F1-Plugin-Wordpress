@@ -5,7 +5,7 @@
             <?php
             settings_fields('f1_tracker_settings');
             do_settings_sections('f1-tracker-settings');
-            submit_button();
+            submit_button('Save Settings');
             ?>
         </form>
     </div>

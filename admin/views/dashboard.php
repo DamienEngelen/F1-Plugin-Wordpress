@@ -27,13 +27,13 @@
                 <?php foreach($top_drivers as $driver):
                     $team_color = F1_Tracker_Helpers::get_team_color($driver['Constructors'][0]['constructorId']);
                 ?>
-                <div class="f1-mini-row" style="border-left: 4px solid <?php echo $team_color; ?>">
+                <div class="f1-mini-row" style="border-left: 5px solid <?php echo $team_color; ?>">
                     <div class="f1-pos"><?php echo $driver['position']; ?></div>
                     <div class="f1-driver-name">
                         <?php echo esc_html($driver['Driver']['familyName']); ?>
                         <span class="f1-team-badge" style="color: <?php echo $team_color; ?>"><?php echo esc_html($driver['Constructors'][0]['name']); ?></span>
                     </div>
-                    <div class="f1-points"><?php echo $driver['points']; ?> PTS</div>
+                    <div class="f1-points"><?php echo $driver['points']; ?></div>
                 </div>
                 <?php endforeach; ?>
             </div>

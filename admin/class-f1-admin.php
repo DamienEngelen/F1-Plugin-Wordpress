@@ -19,6 +19,7 @@ class F1_Tracker_Admin {
         add_menu_page('F1 Tracker', 'F1 Tracker', 'manage_options', 'f1-tracker', array($this, 'render_main_page'), 'dashicons-flag', 30);
         add_submenu_page('f1-tracker', 'Races', 'Races', 'manage_options', 'f1-tracker-races', array($this, 'render_races_page'));
         add_submenu_page('f1-tracker', 'Standings', 'Standings', 'manage_options', 'f1-tracker-standings', array($this, 'render_standings_page'));
+        add_submenu_page('f1-tracker', 'Shortcodes', 'Shortcodes', 'manage_options', 'f1-tracker-shortcodes', array($this, 'render_shortcodes_page'));
         add_submenu_page('f1-tracker', 'Settings', 'Settings', 'manage_options', 'f1-tracker-settings', array($this, 'render_settings_page'));
     }
 
@@ -123,6 +124,10 @@ class F1_Tracker_Admin {
         $standings = $data['MRData']['StandingsTable']['StandingsLists'][0]['DriverStandings'] ?? [];
 
         include F1_TRACKER_PLUGIN_PATH . 'admin/views/standings.php';
+    }
+
+    public function render_shortcodes_page() {
+        include F1_TRACKER_PLUGIN_PATH . 'admin/views/shortcodes.php';
     }
 
     public function render_settings_page() {
